@@ -1,7 +1,8 @@
 # LimaCharlie MSSP Demo Repo
 Example repository demonstrating an MSSP setup with LimaCharlie.
 
-Current Deployment Status: ![deploy](https://github.com/refractionPOINT/mssp-demo/workflows/deploy/badge.svg)
+***Current Deployment Status:****
+![deploy](https://github.com/refractionPOINT/mssp-demo/workflows/deploy/badge.svg)
 
 ## Prerequisite Steps
 1. Create a special CI/CD User on LC to use for orchestrating.
