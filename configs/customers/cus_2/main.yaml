@@ -1,0 +1,5 @@
+version: 2
+include:
+  - ../../global/all.yaml
+  - custom_rules.yaml
+  - custom_fim.yaml

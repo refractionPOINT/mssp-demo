@@ -1,0 +1,7 @@
+version: 2
+include:
+  - rules.yaml
+  - outputs.yaml
+  - fim.yaml
+  - artifact.yaml
+  - exfil.yaml
