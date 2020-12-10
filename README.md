@@ -39,8 +39,8 @@ Each `customers` subdirectory contains any specific customizations needed per cu
 ## Adding a New Customer
 1. Add the CI/CD User to the new organization.
 1. Edit the following files and add the relevant commands based on previous customers:
-  1. `.github/workflows/deploy.yaml`
-  1. `.github/workflows/dry_run.yaml`
+   i. `.github/workflows/deploy.yaml`
+  ii. `.github/workflows/dry_run.yaml`
 
 ## Future Expansion
 1. Add Replay jobs on new D&R rules PR to test rule changes.
