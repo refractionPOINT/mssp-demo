@@ -1,0 +1,20 @@
+version: 3
+integrity:
+  linux-key:
+    patterns:
+    - /root/.ssh/authorized_keys
+    platforms:
+    - linux
+    tags: []
+  linux-ssh-dir:
+    patterns:
+    - /home/maxime/.ssh/*
+    platforms:
+    - linux
+    tags: []
+  test:
+    patterns:
+    - c:\\test.txt
+    platforms:
+    - windows
+    tags: []

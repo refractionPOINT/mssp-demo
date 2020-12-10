@@ -1,4 +1,4 @@
-version: 2
+version: 3
 include:
   - ../../global/all.yaml
   - custom_rules.yaml

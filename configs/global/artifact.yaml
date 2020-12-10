@@ -1,0 +1,18 @@
+version: 3
+artifact:
+  linux-logs:
+    is_delete_after: false
+    patterns:
+    - /var/log/syslog.1
+    - /var/log/auth.log.1
+    platforms:
+    - linux
+    tags: []
+  windows-logs:
+    is_delete_after: false
+    patterns:
+    - c:\\windows\\system32\\winevt\\logs\\Security.evtx
+    - c:\\windows\\system32\\winevt\\logs\\System.evtx
+    platforms:
+    - windows
+    tags: []

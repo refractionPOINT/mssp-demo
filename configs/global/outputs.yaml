@@ -1,0 +1,10 @@
+version: 3
+outputs:
+  testscp:
+    dest_host: 155.138.134.12
+    dir: /root/output/
+    for: event
+    is_built_in: false
+    module: scp
+    password: 'aaabbb'
+    username: root

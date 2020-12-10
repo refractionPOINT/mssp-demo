@@ -1,0 +1,18 @@
+version: 3
+resources:
+  api:
+  - insight
+  - vt
+  service:
+  - sensor-cull
+  - yara
+  - zeek
+  - logging
+  - exfil
+  - responder
+  - sigma
+  - soteria-rules
+  - cuttingedge
+  - replay
+  - integrity
+  - dumper
