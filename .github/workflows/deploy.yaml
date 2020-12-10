@@ -37,8 +37,8 @@ jobs:
 
       # Start deploying to all customers
       - name: Deploy to Customer 1
-        run: limacharlie sync --oid 1111 --force
+        run: limacharlie configs --oid 1111 --force
       - name: Deploy to Customer 2
-        run: limacharlie sync --oid 1111 --force
+        run: limacharlie configs --oid 1111 --force
       - name: Deploy to Customer 3
-        run: limacharlie sync --oid 1111 --force
+        run: limacharlie configs --oid 1111 --force

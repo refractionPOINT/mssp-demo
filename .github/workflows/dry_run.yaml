@@ -37,8 +37,8 @@ jobs:
 
       # Start deploying to all customers
       - name: Dry-run Deploy to Customer 1
-        run: limacharlie sync --oid 1111 --force --dry-run
+        run: limacharlie configs --oid 1111 --force --dry-run
       - name: Dry-run Deploy to Customer 2
-        run: limacharlie sync --oid 1111 --force --dry-run
+        run: limacharlie configs --oid 1111 --force --dry-run
       - name: Dry-run Deploy to Customer 3
-        run: limacharlie sync --oid 1111 --force --dry-run
+        run: limacharlie configs --oid 1111 --force --dry-run

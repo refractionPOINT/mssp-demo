@@ -34,7 +34,7 @@ configs/customers/cus_3/custom_rules.yaml
 
 The `global` directory contains all configs that are global to all customers.
 
-Each `customers` subdirectory contains any specific customizations needed per customer. The `main.yaml` file is the core file used in the `limacharlie sync` CLI invocation.
+Each `customers` subdirectory contains any specific customizations needed per customer. The `main.yaml` file is the core file used in the `limacharlie configs` CLI invocation.
 
 ## Adding a New Customer
 1. Add the CI/CD User to the new organization.
