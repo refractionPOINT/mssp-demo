@@ -2,17 +2,21 @@ version: 3
 artifact:
   linux-logs:
     is_delete_after: false
+    is_ignore_cert: false
     patterns:
     - /var/log/syslog.1
     - /var/log/auth.log.1
     platforms:
     - linux
     tags: []
+    days_retention: 30
   windows-logs:
     is_delete_after: false
+    is_ignore_cert: false
     patterns:
     - c:\\windows\\system32\\winevt\\logs\\Security.evtx
     - c:\\windows\\system32\\winevt\\logs\\System.evtx
     platforms:
     - windows
     tags: []
+    days_retention: 30
