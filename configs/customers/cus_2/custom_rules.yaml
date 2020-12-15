@@ -1,1 +1,11 @@
 version: 3
+rules:
+  test-detection:
+    detect:
+      event: NEW_PROCESS
+      path: event/COMMAND_LINE
+      op: contains
+      value: lc_tracer
+    respond:
+      - action: report
+        name: tracer-detection
