@@ -1,6 +1,10 @@
 # LimaCharlie MSSP Demo Repo
 Example repository demonstrating an MSSP setup with LimaCharlie.
 
+If you are not an MSSP, this structure still describes a recommended setup
+that is scalable and efficient using LimaCharlie. The main changes is that
+you can simplify the configuration (repo here) to be a single tree.
+
 ## Configuration
 
 ***Current Deployment Status:***
