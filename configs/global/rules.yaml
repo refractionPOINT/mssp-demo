@@ -7,7 +7,6 @@ rules:
       op: exists
       path: /
       target: artifact_event
-    name: zeek
     namespace: general
     respond:
     - action: service request
