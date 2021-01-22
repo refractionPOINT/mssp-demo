@@ -43,8 +43,8 @@ jobs:
 
       # Start deploying to all customers
       - name: Dry-run Deploy to Customer 1
-        run: limacharlie configs push --oid af5b16cc-9853-424a-b60a-069c3bbff917 --force --dry-run --config ./configs/customers/cus_1/main.yaml --rules --fp --outputs --integrity --artifact --exfil --resources
+        run: limacharlie configs push --oid af5b16cc-9853-424a-b60a-069c3bbff917 --force --ignore-inaccessible --dry-run --config ./configs/customers/cus_1/main.yaml --rules --fp --outputs --integrity --artifact --exfil --resources
       - name: Dry-run Deploy to Customer 2
-        run: limacharlie configs push --oid a6a29808-1cbb-4f24-b883-7f650d8fbf30 --force --dry-run --config ./configs/customers/cus_2/main.yaml --rules --fp --outputs --integrity --artifact --exfil --resources
+        run: limacharlie configs push --oid a6a29808-1cbb-4f24-b883-7f650d8fbf30 --force --ignore-inaccessible --dry-run --config ./configs/customers/cus_2/main.yaml --rules --fp --outputs --integrity --artifact --exfil --resources
       - name: Dry-run Deploy to Customer 3
-        run: limacharlie configs push --oid a93e2247-9909-4ac8-8650-9b2c58ed7bb7 --force --dry-run --config ./configs/customers/cus_3/main.yaml --rules --fp --outputs --integrity --artifact --exfil --resources
+        run: limacharlie configs push --oid a93e2247-9909-4ac8-8650-9b2c58ed7bb7 --force --ignore-inaccessible --dry-run --config ./configs/customers/cus_3/main.yaml --rules --fp --outputs --integrity --artifact --exfil --resources
