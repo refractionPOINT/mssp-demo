@@ -3,6 +3,7 @@ exfil:
   watch:
     watch_evil:
       event: NEW_PROCESS
-      path: COMMAND_LINE
+      path:
+        - COMMAND_LINE
       operator: contains
       value: evil
