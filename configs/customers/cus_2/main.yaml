@@ -3,3 +3,5 @@ include:
   - ../../global/all.yaml
   - custom_rules.yaml
   - custom_fim.yaml
+  - custom_res.yaml
+  - custom_exfil.yaml
