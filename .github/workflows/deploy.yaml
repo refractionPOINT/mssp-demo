@@ -33,7 +33,8 @@ jobs:
 
       # Install LimaCharlie CLI
       - name: Install LimaCharlie
-        run: git clone https://github.com/refractionPOINT/python-limacharlie.git && cd ./python-limacharlie && python setup.py develop && cd ..
+        # run: git clone https://github.com/refractionPOINT/python-limacharlie.git && cd ./python-limacharlie && python setup.py develop && cd ..
+        run: pip install limacharlie
 
       # Set credentials
       - name: Set LimaCharlie credentials
