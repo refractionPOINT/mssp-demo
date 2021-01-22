@@ -1,0 +1,8 @@
+version: 3
+exfil:
+  watch:
+    watch_evil:
+      event: NEW_PROCESS
+      path: COMMAND_LINE
+      operator: contains
+      value: evil
