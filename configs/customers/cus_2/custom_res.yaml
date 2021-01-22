@@ -1,0 +1,5 @@
+version: 3
+resources:
+  service:
+    - exfil
+    - generic-macos
