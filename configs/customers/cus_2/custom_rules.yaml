@@ -5,7 +5,7 @@ rules:
       event: NEW_PROCESS
       path: event/COMMAND_LINE
       op: contains
-      value: lc_tracer
+      value: lc_tracer2
     respond:
       - action: report
         name: tracer-detection
