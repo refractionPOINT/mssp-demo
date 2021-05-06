@@ -95,3 +95,12 @@ The Viewers OG is designed for Users who require visibility into the activity wi
 
 ##### Auditors
 The Auditors OG is designed for high level auditing and reporting. It provides permissions to view audit logs and list sensors within each Organization.
+
+#### Break-Glass
+Some permissions may be considered more sensitive, like `sensor.task` and you may wish to restrict their access.
+
+The recommended solution in LimaCharlie is to use Organization Groups (OG) as a break-glass mechanism. This has the advantage of limiting access to the permissions in general, while limiting the friction users who need to "upgrade" to those permissions encounter.
+
+A classic example would be where you want to restrict `sensor.task` only to active incident responders. To accomplish this, you would create an OG named `active-responders` which holds the `sensor.task` permissions and has all active Organization as part of the group. By default, none of your analyst are Members of the group. When an incident occurs, an Owner of the group can add a User to the group to grant the tasking permission. By doing so, it also creates an audit trail (from the OG's audit log). When the User is done, simply remove them from the group.
+
+Organization Groups also have [an API](https://api.limacharlie.io/static/swagger/#/Groups). This makes it easy to extend them to accomplish more complex and integrated workflows for your users.
