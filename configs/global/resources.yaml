@@ -16,3 +16,4 @@ resources:
   - replay
   - integrity
   - dumper
+  - infrastructure-service
