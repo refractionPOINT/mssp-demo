@@ -1,13 +1,17 @@
 version: 3
-fps:
-  WMI Event Subscription:
-    data:
-      op: and
-      rules:
-      - op: is
-        path: cat
-        value: WMI Event Subscription
-      - op: is
-        path: detect/Event/System/Execution/ProcessID
-        value: '4'
-    name: WMI Event Subscription
+hives:
+  fp:
+    WMI Event Subscription:
+      data:
+        op: and
+        rules:
+        - op: is
+          path: cat
+          value: WMI Event Subscription
+        - op: is
+          path: detect/Event/System/Execution/ProcessID
+          value: '4'
+      usr_mtd:
+        enabled: true
+        expiry: 0
+        tags: []

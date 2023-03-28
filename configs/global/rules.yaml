@@ -1,17 +1,22 @@
 version: 3
-rules:
-  zeek:
-    detect:
-      artifact type: pcap
-      event: ingest
-      op: exists
-      path: /
-      target: artifact_event
-    namespace: general
-    respond:
-    - action: service request
-      name: zeek
-      request:
-        action: run_on
-        artifact_id: <<routing/log_id>>
-        retention: 90
+hives:
+  dr-general:
+    zeek:
+      data:
+        detect:
+          artifact type: pcap
+          event: ingest
+          op: exists
+          path: /
+          target: artifact_event
+        respond:
+        - action: service request
+          name: zeek
+          request:
+            action: run_on
+            artifact_id: <<routing/log_id>>
+            retention: 90
+      usr_mtd:
+        enabled: true
+        expiry: 0
+        tags: []
