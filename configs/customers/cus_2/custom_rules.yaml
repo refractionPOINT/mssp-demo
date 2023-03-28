@@ -1,11 +1,17 @@
 version: 3
-rules:
-  test-detection:
-    detect:
-      event: NEW_PROCESS
-      path: event/COMMAND_LINE
-      op: contains
-      value: lc_tracer2
-    respond:
-      - action: report
-        name: tracer-detection
+hives:
+  dr-general:
+    test-detection:
+      data:
+        detect:
+          event: NEW_PROCESS
+          op: contains
+          path: event/COMMAND_LINE
+          value: lc_tracer2
+        respond:
+        - action: report
+          name: tracer-detection
+      usr_mtd:
+        enabled: true
+        expiry: 0
+        tags: []
