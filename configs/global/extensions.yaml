@@ -1,0 +1,7 @@
+version: 3
+extensions:
+    - ext-infrastructure
+    - ext-velociraptor
+    - payload-manager
+    - ext-reliable-tasking
+    - ext-sensor-cull

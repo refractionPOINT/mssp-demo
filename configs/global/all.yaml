@@ -1,9 +1,11 @@
 version: 3
 include:
+  - extensions.yaml
+  - resources.yaml
+  - installation_keys.yaml
   - rules.yaml
   - outputs.yaml
   - integrity.yaml
   - artifact.yaml
   - exfil.yaml
   - fp.yaml
-  - resources.yaml
