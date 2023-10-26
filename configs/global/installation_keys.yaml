@@ -1,0 +1,18 @@
+version: 3
+installation_keys:
+  linux:
+    desc: linux
+    tags:
+    - linux
+  mac:
+    desc: mac
+    tags:
+    - mac
+  windows:
+    desc: windows
+    tags:
+    - windows
+  chrome:
+    desc: chrome
+    tags:
+    - chrome
